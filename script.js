@@ -134,7 +134,7 @@ setInterval(() => {
     if (pendingNotes.length > 0) {
         if ("Notification" in window && Notification.permission === "granted") {
             new Notification("Tracey Daily Jotter Reminder 🔔", {
-                body: `Hey! You still have ${pendingNotes.length} pending task(s) to complete today. Let's get it done!`,
+                body: `Hey! You still have pending task(s) to complete today. Let's get it done!`,
                 icon: "logo_tracey.jpg"
             });
         }

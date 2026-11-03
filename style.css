@@ -27,11 +27,24 @@
     margin: 0;
 }
 
-/* Latar Belakang & Susun Atur Utama */
 body {
-    margin: 0;
-    background: #faf9f6; /* Warna latar belakang lembut ala butik moden */
+    /* Warna asas oren cair yang lembut dan menenangkan */
+    background-color: #fff9f6; 
+    
+    /* Tambah corak geometri halus / butik grid estetik di latar belakang */
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(235, 104, 76, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(235, 104, 76, 0.06) 0%, transparent 40%),
+        linear-gradient(to right, rgba(235, 104, 76, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(235, 104, 76, 0.03) 1px, transparent 1px);
+    
+    background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 #app {
